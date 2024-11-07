@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://kit.fontawesome.com/b48aefa85a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-white w3-wide w3-padding w3-card w3-top" style="display: flex; align-items: center; justify-content: space-between">
+      <div class="w3-left">
+        <a href="#home" class="w3-bar-item w3-button">
+          <img src="img/AL-logo.png" style="width: 50px; height: auto" alt="Your Image" />
+
+        </a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="nav-icon" onclick="toggleMenu()">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+
+      <!-- Nav Bar -->
+      <div id="nav">
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
+
+      <!-- Mobile Menu (Initially hidden) -->
+      <div id="m-nav">
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="w3-display-container w3-content w3-wide">
+      <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white">
+          <span class="w3-padding w3-black w3-opacity-min"><b>AL</b></span>
+          <span id="span-dev" class="w3-text-light-grey">Web Developer</span>
+        </h1>
+        <div style="margin-top: 150px">
+          <button class="w3-button w3-black w3-section w3-opacity-min" style="position: relative" onclick="scrollToProjects()">
+            view projects
+          </button>
+        </div>
+        <div class="arrow" style="padding-top: 20px">
+          <i class="fa-solid fa-angles-down fa-bounce fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="aggron" tabindex="-1">
+          <a href="#home"><img src="img/aggron.png" alt="" /></a>
+          <p style="position: absolute; bottom: 180px; left: 150px; color: white">hey!</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section w3-container" style="padding: 200px 0; background-color: #d3d3d3">
+      <div class="home-container">
+        <!-- Image Div -->
+        <div class="home-image">
+          <img src="img/AL-logo.png" style="width: 100%; height: auto" alt="Your Image" />
+        </div>
+        <!-- Text Div -->
+        <div class="home-text" style="padding: 20px">
+          <h2>Hi I'm Aaron!</h2>
+          <p>
+            I have knowledge in web development and am currently studying back-end technologies at
+            Seneca College. My goal is to combine these skills and become a full-stack developer.
+          </p>
+          <p class="w3-large">Welcome to my portfolio!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="w3-content" style="max-width: 100%; padding: 200px 0">
+      <div class="about-wrapper w3-container w3-padding-32">
+        <h2 class="w3-padding-16">About</h2>
+        <p>
+          I graduated from Ryerson University with a bachelors of Commerce in Business Technology
+          Management. I have also taken a bootcamp in front-end web development, focusing on CSS
+          concepts, Javascript and React. I am currently studying back-end programming concepts at
+          Seneca College. I look forward to incorporating my business and IT background with my
+          knowledge in web development into my career.
+        </p>
+        <p>
+          I have a foundational understanding of web development, with knowledge and practice with
+          HTML5, CSS3, SASS, JavaScript, and React. Additionally, I have learned C and C++
+          programming as well as concepts in databases using SQL. As I get through my Computer
+          Programming Analysis program at Seneca, I will learn more skills and refind the curernt
+          ones I have.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects content -->
+    <section id="projects" class="w3-content" style="max-width: 100%; background-color: #d3d3d3; padding: 150px 0px">
+      <div class="project-wrapper">
+        <div class="w3-margin-top">
+          <!-- Project 1 -->
+          <div class="project-container w3-margin-bottom">
+            <div class="project-img">
+              <img src="img/ecotravel.png" alt="Project 1 Screenshot" />
+            </div>
+            <div class="project-content">
+              <h2 class="w3-text-black">Ecotravel Agency</h2>
+              <p class="w3-large">
+                A company profile webpage for Ecotravel. This webpage uses Bootstrap CSS to create a
+                visually appealing layout and Javascript to add interactive elements through DOM
+                manipulation. Includes an interactive map and table for finding travel destinations.
+              </p>
+              <p class="w3-medium" style="color: #333">
+                <strong>Technologies Used:</strong> HTML, CSS, JavaScript
+              </p>
+              <p>
+                <a href="https://github.com/aalo826/url-shortener" target="_blank">Github</a>
+                |
+                <a href="https://aaron-lo-royal-bai-pokedex-project-2.netlify.app/" target="_blank">Live View</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-container w3-margin-bottom">
+            <div class="project-img">
+              <img src="img/url-short.jpg" alt="Project 2 Screenshot" />
+            </div>
+            <div class="project-content">
+              <h2 class="w3-text-black">URL Shortener</h2>
+              <p class="w3-large">
+                A clone website challenge from one of the challenges on Frontend Mentor. Users can
+                enter any valid URL and have it shortened using the shrtcode API. URLs are stored on
+                local storage so they don't disappear after refresh
+              </p>
+              <p class="w3-medium" style="color: #333">
+                <strong>Technologies Used:</strong> HTML, CSS, JavaScript
+              </p>
+              <p>
+                <a href="https://github.com/aalo826/url-shortener" target="_blank">Github</a>
+                |
+                <a href="https://url-shorterner-alo.netlify.app//" target="_blank">Live View</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-container w3-margin-bottom">
+            <div class="project-img">
+              <img src="img/pokemon-pokedex.jpg" alt="Project 3 Screenshot" />
+            </div>
+            <div class="project-content">
+              <h2 class="w3-text-black">Pokemon Pokedex</h2>
+              <p class="w3-large">
+                A Pokedex of the first generation pokemon using the PokeAPI. Users choose a Pokemon
+                through a dropbox menu and then the details of said pokemon are displayed.
+              </p>
+              <p class="w3-medium" style="color: #333">
+                <strong>Technologies Used:</strong> HTML, CSS, JavaScript
+              </p>
+              <p>
+                <a href="https://github.com/aalo826/EcoTravel" target="_blank">Github</a>
+                |
+                <a href="https://alo-ecotravel-web222.netlify.app/" target="_blank">Live View</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="w3-container">
+      <h2 class="w3-padding-16 w3-border-bottom w3-border-light-grey">
+        Contact
+        <button class="w3-button w3-section w3-black" style="display: block; min-width: auto; margin: auto; font-size: 15px" onclick="window.open('other/aaron-lo-resume.pdf', '_blank');">
+          View My Resume
+        </button>
+      </h2>
+      <p style="margin-top: 50px">Lets get in touch and talk about your next project.</p>
+      <!-- Contact Form -->
+      <form id="contact-form" action="/action_page.php" target="_blank">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="First Name" required name="FirstName" />
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Last Name" required name="LastName" />
+        <input class="w3-input w3-section w3-border" type="email" placeholder="Email" required name="Email" />
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Company" required name="Company" />
+        <textarea class="w3-input w3-section w3-border message-box" placeholder="Message" required name="Message"></textarea>
+        <button class="w3-button w3-black w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+
+      <div id="submission-message" style="display: none; color: green">
+        Your message has been sent successfully!
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+      <p>&copy; 2024 Aaron Lo. All rights reserved.</p>
+      <p>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" class="w3-hover-text-green" title="W3.CSS" target="_blank">w3.css</a>
+      </p>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
